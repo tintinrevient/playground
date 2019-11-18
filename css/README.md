@@ -11,9 +11,7 @@
 ### Color & Contrast
 * https://www.sessions.edu/color-calculator/
 * http://hslpicker.com/
-* https://tallys.github.io/color-theory/
 * https://contrast-ratio.com/
-* https://css-tricks.com/stripes-css/
 
 ### Picture
 * https://placeholder.com/
