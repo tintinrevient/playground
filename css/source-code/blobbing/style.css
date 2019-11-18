@@ -1,0 +1,70 @@
+body {
+  background: black;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#zone-wrap {
+  background: black;
+  filter: brightness(1.4) contrast(40);
+  overflow: hidden;
+  padding: 20px;
+}
+
+#zone {
+  position: relative;
+  filter: blur(18px);
+}
+
+.line {
+  background: black;
+  white-space: nowrap;
+}
+
+.line > div {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  background: white;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.line > div:nth-child(odd) {
+  border-radius: 0;
+  animation: rotate 5s linear infinite;
+}
+
+.line-one {
+  animation: shimmy 15s linear infinite;
+}
+
+.controls {
+  margin-top: 60px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.controls label {
+  color: white;
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.controls div {
+  padding: 5px;
+}
+
+@keyframes shimmy {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

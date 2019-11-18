@@ -1,0 +1,89 @@
+body {
+  background: black;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#zone-wrap {
+  background: black;
+  filter: brightness(1.4) contrast(40);
+  overflow: hidden;
+  padding: 20px;
+}
+
+#zone {
+  position: relative;
+  filter: blur(18px);
+}
+
+.line {
+  background: black;
+  white-space: nowrap;
+}
+
+.line > div {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  background: white;
+  display: inline-block;
+  border-radius: 50%;
+  border-radius: 0;
+  // animation: rotate 5s linear infinite;
+}
+
+.line-one {
+  // animation: shimmy 15s linear infinite;
+}
+
+.line-two {
+  // animation: shimmy 10s linear infinite;
+}
+
+.controls {
+  margin-top: 60px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.controls label {
+  color: white;
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.controls div {
+  padding: 5px;
+}
+
+@keyframes shimmy {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+b {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  animation: moveX 5.05s linear 0s infinite alternate, moveY 5.4s linear 0s infinite alternate;
+}
+
+@keyframes moveX {
+  from { left: 0; } to { left: 600px; }
+}
+
+@keyframes moveY {
+  from { top: 0; } to { top: 360px; }
+}
