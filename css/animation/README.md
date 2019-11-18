@@ -14,5 +14,5 @@
 * animation: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction
 
 
-## References
+## Reference
 * https://www.w3schools.com/cssref/css3_pr_filter.asp

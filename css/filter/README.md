@@ -20,5 +20,5 @@ playground: https://www.w3schools.com/cssref/playit.asp?filename=playcss_filter
 * sepia(%): 0% is default, 100% is completely sepia.
 * url(): url() function takes the location of an XML file that specifies an SVG filter, and may include an anchor to a specific filter element.
 
-## References
+## Reference
 * https://www.w3schools.com/cssref/css3_pr_filter.asp

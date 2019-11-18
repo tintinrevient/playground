@@ -17,5 +17,5 @@
 * skewX(x)
 * skewY(y)
 
-## References
+## Reference
 * https://www.w3schools.com/cssref/css3_pr_transform.asp

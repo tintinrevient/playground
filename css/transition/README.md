@@ -10,5 +10,5 @@
 	<img src="./pix/cubic-bezier.png" width="400" />
 </p>
 
-## References
+## Reference
 * https://cubic-bezier.com/
