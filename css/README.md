@@ -22,6 +22,7 @@
 * https://www.w3schools.com/css/
 * https://www.w3schools.com/graphics/svg_intro.asp
 * https://css-tricks.com/
+* https://csstriggers.com/
 * https://codetheweb.blog/
 * https://developer.mozilla.org/en-US/docs/Web/CSS/background-color
 * https://caniuse.com/#home
