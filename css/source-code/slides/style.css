@@ -189,7 +189,7 @@ ul {
 
 .slide img {
   vertical-align: middle;
-  height: 632px;
+  height: 630px;
   margin-right: auto;
   margin-left: auto;
   display: block;
@@ -207,7 +207,7 @@ ul {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.5s ease-out;
 }
 
 .active, .dot:hover {
@@ -216,7 +216,7 @@ ul {
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 
 @keyframes fade {
