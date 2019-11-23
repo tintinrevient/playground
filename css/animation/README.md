@@ -16,3 +16,5 @@
 
 ## Reference
 * https://www.w3schools.com/cssref/css3_pr_filter.asp
+* https://animista.net/
+* https://developer.mozilla.org/en-US/docs/Web/API/Animation
