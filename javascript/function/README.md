@@ -443,4 +443,25 @@ assert(ninja2.result === 26, "juggled via call");
 </script>
 ```
 
+## Callback
+- [ ] Pass the current element to the callback as a parameter
+- [x] Make the current element the function context of the callback
+
+```
+function forEach(list, callback) {
+  for (var n = 0; n < list.length; n++) {
+    callback.call(list[n], n);
+  }
+}
+
+var weapons = [ { type: 'shuriken' },
+                { type: 'katana' },
+                { type:'nunchucks' } ];
+
+forEach(weapons, function(index){
+    assert(this === weapons[index], 
+          "Got the expected value of " + weapons[index].type);
+});
+```
+
 ## Reference
