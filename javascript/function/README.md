@@ -127,8 +127,49 @@ myFunction(function(){});
 ```
 
 **Arrow functions**
+* Arrow functions **don’t have their own this value**. Instead, they remember the value of the this parameter **at the time of their definition**.
+* It makes them particularly good as **callback functions**.
+* Arrow functions don't have their own context. Instead, the context is inherited from the function in which **they’re defined**. The this parameter in our arrow function callback refers to the button object.
+
 ```
 myArg => myArg*2
+
+<button id="test">Click Me!</button>
+<script>
+  function Button(){
+     this.clicked = false;
+     this.click = () => {
+          this.clicked = true;
+          assert(button.clicked, "The button has been clicked");
+     };
+  }
+           
+  var button = new Button();
+           
+  var elem = document.getElementById("test");
+  elem.addEventListener("click", button.click);
+</script>
+```
+
+* The object literal is created in global code, the this value of the arrow function will be the this value of the global code.
+
+```
+<button id="test">Click Me!</button>
+<script>
+  assert(this === window, "this === window");
+  var button = {
+     clicked = false;
+     click = () => {
+          this.clicked = true;
+          assert(button.clicked, "The button has been clicked"); // NOT TRUE
+          assert(this === window, "In arrow function this === window");
+          assert(window.clicked, "clicked is stored in window");
+     };
+  }
+                      
+  var elem = document.getElementById("test");
+  elem.addEventListener("click", button.click);
+</script>
 ```
 
 **Function constructors**
@@ -370,7 +411,7 @@ assert(ninja2.result === 26, "juggled via call");
      this.clicked = false;
      this.click = function(){
           this.clicked = true;
-          assert(button.clicked, "The button has been clicked");
+          assert(button.clicked, "The button has been clicked"); // NOT TRUE
      };
   }
            
